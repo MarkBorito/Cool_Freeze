@@ -21,10 +21,11 @@ $pages = [
     'set_password' => 'auth/set_password.php',
     'error404' => 'error/error404.php',
     'maintenance' => 'error/maintenance.php',
+    'dashboard' => 'dashboard.php',
 ];
 
 //                        change this 'register'. pick the page in the $pages
-$page = $_GET['page'] ?? 'register';
+$page = $_GET['page'] ?? 'dashboard';
 
 if (
     !is_string($page) ||
